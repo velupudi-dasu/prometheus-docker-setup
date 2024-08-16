@@ -5,7 +5,7 @@ FROM prom/prometheus:v2.46.0
 WORKDIR /etc/prometheus
 
 # Copy the custom Prometheus configuration file into the container
-COPY prometheus.yml /etc/prometheus/
+COPY prometheus.yml /etc/prometheus/prometheus.yml
 
 # Expose the default Prometheus port
 EXPOSE 9090
